@@ -1,0 +1,23 @@
+
+
+  <h3>Bienvenid@ a IsaliaPHP</h3>
+    <div class="row-fluid">
+
+          <table class="table table-bordered table-condensed table-striped">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+              <?php foreach($usuarios as $usuario): ?>
+                <tr>
+                    <td><?= $usuario['login'];?></td>
+                    <td>-</td>
+                </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+
+    </div>

@@ -1,0 +1,16 @@
+<h3>Editar categoría <?= $category['id'];?></h3>
+  <div class="row-fluid">
+
+            <form id="form" name="form" method="post">
+              <label>Nombre</label>
+              <input type="text" name="category[name]" id="category.name" value="<?= $category['name'];?>"/>
+
+              <label>Posicion</label>
+              <input type="number" name="category[pos]" id="category.pos" value="<?= $category['pos'];?>"/>
+
+              <br/>
+              <input type="submit" name="enviar" value="Guardar" class="btn btn-primary">
+              <?= Html::link('Cancelar', 'categorias/index', 'class="btn btn-default"'); ?> 
+            </form>
+
+  </div>
