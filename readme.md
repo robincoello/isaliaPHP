@@ -14,7 +14,7 @@ NotORM está incluido como vendor, pero tiene una clase lib/Model que hereda a s
 He usado MySQL para la primera prueba, y el esquema pueden encontrarlo en config/data.sql
 La configuración de acceso a la base de datos está en config/config.php
 
-La autenticación está basada en Md5, pero es cosa de hacer ajustes para corregir eso (ver lib/auth.class.php)
+La autenticación está basada en Md5 con un usuario llamado admin, cuya clave también es admin. Para mejorar la autenticación basta con hacerse algunos ajustes en lib/auth.class.php
 
 Aún quedan cosas por hacer, pero al menos hay un ejemplo de crud (ABM), y de autenticación incluidos.
 
